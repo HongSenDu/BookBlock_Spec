@@ -11,6 +11,7 @@
 
 .bb-custom-wrapper {
 	width: 100vw;
+	height:100vh;
 	position: relative;
 }
 
@@ -22,7 +23,7 @@
 .bb-custom-wrapper nav {
 	width: 100%;
 	height: 30px;
-	position: absolute;
+	position:absolute;
 	z-index: 101;
 	text-align: center;
 	bottom:10%;
