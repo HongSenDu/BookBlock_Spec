@@ -213,19 +213,7 @@
 					config.$navLast.on('click touchstart', function () {
 						config.$bookBlock.bookblock('last');
 						return false;
-					});
-
-					// add swipe events
-					$slides.on({
-						'swipeleft': function (event) {
-							config.$bookBlock.bookblock('next');
-							return false;
-						},
-						'swiperight': function (event) {
-							config.$bookBlock.bookblock('prev');
-							return false;
-						}
-					});
+					});					
 
 					// add keyboard events
 					$(document).keydown(function (e) {
