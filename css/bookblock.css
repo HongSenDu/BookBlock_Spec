@@ -288,6 +288,9 @@
 	}
 	.LFE {
 		width:90%;
+		text-align:left;
+		text-indent: 15%;
+
 	}
 	.author {
 		margin-bottom:0;
