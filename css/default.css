@@ -1,17 +1,35 @@
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
-
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
+body,
+html {
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
 
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #777;
 	background: #f6f6f6;
-	overflow-y:hidden;
+	overflow-y: hidden;
 }
 
 a {
@@ -21,12 +39,12 @@ a {
 }
 
 #name {
-	position:absolute;
-	bottom:10%;
-	right:10%;
-	color:green;
-	z-index:1000;
-	font-size:20px;
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+	color: green;
+	z-index: 1000;
+	font-size: 20px;
 }
 
 a:hover,
@@ -57,7 +75,7 @@ a img {
 		width: 100%;
 		min-width: auto;
 		min-height: auto;
-		padding: 1em; 
+		padding: 1em;
 	}
 
 	.column p {
@@ -66,8 +84,6 @@ a img {
 	}
 
 	.column:nth-child(2) {
-		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+		box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
 	}
 }
-
-

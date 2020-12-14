@@ -1,13 +1,12 @@
 .bb-bookblock {
-	width: 100vw;
-	height: 100vh;
+	width: 135vh;
+	height: 90vh;
 	position: relative;
 	z-index: 100;
-	-webkit-perspective: 1300px;
-	perspective: 1300px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vh;
+	overflow:hidden;
 }
 
 .name {
@@ -24,9 +23,14 @@
 	transition-property: transform;
 }
 
+.bb-item img {
+	width: 100%;
+	height: auto;
+}
+
 .bb-page img {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 .bb-vertical .bb-page {
@@ -173,13 +177,7 @@
 	background: #fff;
 }
 
-.bb-item img {
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-}
+
 
 /* No JS */
 .no-js .bb-bookblock,
@@ -212,11 +210,11 @@
 }
 
 .quote_block {
-	width:50%;
-	height:50%;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:10%;
+	width: 50%;
+	height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
 }
 
 @media screen and (max-width: 600px) {
