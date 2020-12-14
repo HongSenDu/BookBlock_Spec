@@ -273,15 +273,24 @@
 		width:100%;
 	}
 	.quote_block {
-		height:15vh;
+		height:auto;
 		position:relative;
 		transform:none;
 		top:0;
 		left:0;
-		padding:10px;
+		padding:15px;
 		font-size:1em;
 		text-align: center;
+		margin-left:auto;
+		margin-right:auto;
 		margin-top:-5px;
+		width:80%;
+	}
+	.LFE {
+		width:90%;
+	}
+	.author {
+		margin-bottom:0;
 	}
 	body {
 		overflow-y: visible;
