@@ -234,19 +234,19 @@
 #helen {
 	position: absolute;
 	top: 55%;
-	right: 34%;
+	right: 40vh;
 	width: 150px;
 	height: 30px;
-	transform: rotate(-50deg);
+	transform: rotate(-60deg);
 }
 
 #hong {
 	position: absolute;
 	top: 72.5%;
-	right: 35%;
+	right: 43vh;
 	width: 160px;
 	height: 30px;
-	transform: rotate(-50deg);
+	transform: rotate(-60deg);
 }
 
 .quote_block {
