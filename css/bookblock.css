@@ -263,17 +263,34 @@
 @media screen and (max-width: 600px) {
 	.bb-bookblock {
 		height: 100%;
+		margin-top:0;
+		width:100%;
 	}
-
+	.quote_block {
+		height:15vh;
+		position:relative;
+		transform:none;
+		top:0;
+		left:0;
+		padding:10px;
+		font-size:1em;
+		text-align: center;
+		margin-top:-5px;
+	}
 	body {
 		overflow-y: visible;
+	}
+
+	#hong,#helen {
+		display:none;
 	}
 
 	.bb-item {
 		position: relative;
 		display: block !important;
-		height: 60vh;
+		height: auto;
 		width: 100vw;
+		margin-bottom:0;
 	}
 
 	#cover-mobile {
