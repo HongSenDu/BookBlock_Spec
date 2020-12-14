@@ -190,6 +190,8 @@
 			// update current value
 			this.$current = this.$items.eq(this.current);
 
+
+
 			if (page !== undefined) {
 				this.current = page;
 			}
@@ -220,21 +222,43 @@
 				this._layout(dir);
 			}
 
-			var names = ["Aaron Jackson", "Liza Evseeva", "Yingjie Wang", "Natalie Tak", "Carlos Ochoa", "Ray Banke", "Sadia Sharif", "Jules Michaud", "Tina Wang", "Brenda Huang"]
+			var names = ["Aaron Jackson", "Liza Evseeva", "Yingjie Wang", "Natalie Tak", "Carlos Ochoa", "Ray Banke", "Sadia Sharif", "Julian Michaud", "Tina Wang", "Brenda Huang"]
 			var app = document.getElementById('name');
 
-			var typewriter = new Typewriter(app, {
-				loop: true,
-				delay: 75,
-			});
-
-			typewriter
-				.pauseFor(500)
-				.typeString(names[this.current])
-				.pauseFor(1000000)
-				.start();
-			console.log(app)
-
+			if (this.current % 2 == 0) {
+				var typewriter = new Typewriter(app, {
+					loop: true,
+					delay: 75,
+				});
+				typewriter
+					.pauseFor(500)
+					.typeString(names[Math.floor((this.current - 1) / 2)])
+					.pauseFor(1000000)
+					.start();
+			}
+			if (this.current % 2 != 0 && this.previous > this.current) {
+				var typewriter = new Typewriter(app, {
+					loop: true,
+					delay: 75,
+				});
+				console.log("hi")
+				typewriter
+					.pauseFor(500)
+					.typeString(names[Math.floor((this.current - 2) / 2)])
+					.pauseFor(1000000)
+					.start();
+			}
+			var colors = ["#ccccff", "#94c6ad", "#011f60", "#f49dc0", "#f08212", "#000000", "#2b1c47", "#c4deeb", "#2a5545", "#b8b9c4", "#000000"]
+			app.style.color = colors[Math.floor((this.current) / 2)]
+			var bb = document.getElementsByClassName("bb-content");
+			for (var i = 0; i < bb.length; i++) {
+				console.log((Math.floor((this.current) / 2)))
+				if (this.previous > this.current) {
+					bb[i].style.backgroundColor = colors[Math.floor((this.current) / 2)]
+				} else {
+					bb[i].style.backgroundColor = colors[Math.floor((this.current - 1) / 2)]
+				}
+			}
 		},
 		_layoutNoSupport: function (dir) {
 			this.$items.hide();

@@ -6,13 +6,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5vh;
-	overflow:hidden;
-}
-
-.name {
-	position: absolute;
-	bottom: 10%;
-	right: 10%;
+	-webkit-perspective: 2000px;
+	perspective: 2000px;
 }
 
 .bb-page {
@@ -113,7 +108,7 @@
 
 /* Content display */
 .bb-content {
-	background: #fff;
+	background-color: #ccccff;
 }
 
 .bb-vertical .bb-front .bb-content {
@@ -174,11 +169,56 @@
 	top: 0;
 	left: 0;
 	display: none;
-	background: #fff;
 }
 
 
+#quote1 {
+	background-color: #ccccff;
+}
 
+#quote2 {
+	background-color: #94c6ad;
+}
+
+#quote3 {
+	background-color: #011f60;
+}
+
+#quote4 {
+	background-color: #f49dc0;
+}
+
+#quote5 {
+	background-color: #f08212;
+}
+
+#quote6 {
+	background-color: #000000;
+}
+
+#quote7 {
+	background-color: #2b1c47;
+}
+
+#quote8 {
+	background-color: #c4deeb;
+}
+
+#quote9 {
+	background-color: #2a5545;
+}
+
+#quote10 {
+	background-color: #b8b9c4;
+}
+
+#quote11 {
+	background-color: #000000;
+}
+
+.white {
+	color:white !important;
+}
 /* No JS */
 .no-js .bb-bookblock,
 .no-js ul.bb-custom-grid li {
@@ -210,11 +250,14 @@
 }
 
 .quote_block {
-	width: 50%;
-	height: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2em;
+	text-align: center;
+	color: black;
+	font-family: 'Merriweather', serif;
 }
 
 @media screen and (max-width: 600px) {

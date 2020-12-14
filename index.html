@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
 	<!-- custom demo style -->
 	<link rel="stylesheet" type="text/css" href="css/demo1.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	<script src="js/modernizr.custom.js"></script>
 	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
@@ -30,68 +32,95 @@
 							<div></div>
 						</a>
 					</div>
-					<div class="bb-item">
-						<div class="quote_block"></div>
+					<div class="bb-item" id="quote1">
+						<div class="quote_block">
+						</div>
 					</div>
 					<div class="bb-item">
 						<img src="images/Aaron Jackson 1.gif" alt="image01" />
 					</div>
-					<div class="bb-item quote">
-						<div class="quote_block"></div>
+					<div class="bb-item" id="quote2">
+						<div class="quote_block"> I’ve been fleshing out my Pinterest lately and taking a lot of long
+							walks.</div>
 					</div>
 					<div class="bb-item">
 						<img src="images/Liza Evseeva 2.jpg" alt="image01" />
 					</div>
-					<div class="bb-item quote">
-						<div class="quote_block"></div>
+					<div class="bb-item" id="quote3">
+						<div class="quote_block white">As a film major, I’ve had to watch a looooot of movies this semester.
+							My eyes get worn out from all the screen time, but at the end of the day, I’m grateful to
+							get to experience so many different worlds, so much art.
+						</div>
 					</div>
 					<div class="bb-item">
 						<img src="images/Yingjie Wang 3.jpg" alt="image01" />
 					</div>
-					<div class="bb-item quote">
-						<div class="quote_block"></div>
+					<div class="bb-item" id="quote4">
+						<div class="quote_block">Being at home all the time, I’ve come to find inspiration in the spaces
+							around me and the view from my window. Despite online classes, I’ve enjoyed getting to know
+							my classmates through their backgrounds, physical or virtual—little windows into their
+							vibrant worlds.</div>
 					</div>
 					<div class="bb-item">
 						<img src="images/Natalie Tak 4.jpg" alt="image01" />
 					</div>
-					<div class="bb-item quote">
-						<div class="quote_block"></div>
+					<div class="bb-item" id="quote5">
+						<div class="quote_block">It has been hard to come by inspiration since everything has gone
+							virtual, but Korean vocab words have given me an entertaining insight into a different
+							culture.
+						</div>
 					</div>
 					<div class="bb-item">
 						<img src="images/Carlos Ochoa 5.jpg" alt="image01" />
 					</div>
-					<div class="bb-item quote">
-						<div class="quote_block"></div>
+					<div class="bb-item" id="quote6">
+						<div class="quote_block white">I have really enjoyed my classes this year despite their online nature.
+							Learning has always been a source of inspiration, and this piece is based on Dogū figurines
+							from my Intro to East Asian Civilization: Japan class.
+						</div>
 					</div>
 					<div class="bb-item">
 						<img src="images/Ray Banke 6.jpg" alt="image01" />
 					</div>
-					<div class="bb-item quote">
-						<div class="quote_block"></div>
+					<div class="bb-item" id="quote7">
+						<div class="quote_block white"> Lately, I’ve been pushing myself to experiment with and learn more
+							about typography and graphic design, inside and outside of classes. These posters are a fun
+							sampling from my ongoing exploration.
+						</div>
 					</div>
 					<div class="bb-item">
 						<img src="images/Sadia Sharif 7.jpg" alt="image01" />
 					</div>
-					<div class="bb-item quote">
-						<div class="quote_block"></div>
+					<div class="bb-item" id="quote8">
+						<div class="quote_block">I love drawing people and silly things. I think the doodles in this
+							piece capture a glimpse of what my brain looks like during online classes.
+						</div>
 					</div>
 					<div class="bb-item">
 						<img src="images/Jules Michaud 8.png" alt="image01" />
 					</div>
-					<div class="bb-item quote">
-						<div class="quote_block"></div>
+					<div class="bb-item" id="quote9">
+						<div class="quote_block">It has been more difficult than usual to find inspiration when most of
+							my contact with the outside world has been with virtual floating heads. I have been trying
+							to get outside more while the weather is good and to incorporate nature into my art.
+						</div>
 					</div>
 					<div class="bb-item">
 						<img src="images/Tina Wang 9.jpg" alt="image01" />
 					</div>
-					<div class="bb-item quote">
-						<div class="quote_block"></div>
+					<div class="bb-item" id="quote10">
+						<div class="quote_block">My architect brain never shuts off when I travel to new places. Using
+							Google Maps in my Intro to the History of Architecture class, I still feel like I’m
+							exploring the world!
+						</div>
 					</div>
 					<div class="bb-item">
 						<img src="images/Brenda Huang 10.gif" alt="image01" />
 					</div>
-					<div class="bb-item quote">
-						<div class="quote_block"></div>
+					<div class="bb-item" id="quote11">
+						<div class="quote_block white">Doodling has always been a creative outlet for me: a way to refresh and
+							focus, even in the midst of what feels like endless burnout.
+						</div>
 					</div>
 				</div>
 				<nav>
@@ -116,9 +145,9 @@
 				},
 				init = function () {
 					config.$bookBlock.bookblock({
-						speed: 800,
+						speed: 1000,
 						shadowSides: 0.8,
-						shadowFlip: 0.7
+						shadowFlip: 0.4
 					});
 					initEvents();
 				},
