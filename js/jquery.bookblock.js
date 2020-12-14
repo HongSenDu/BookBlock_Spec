@@ -248,7 +248,7 @@
 					.pauseFor(1000000)
 					.start();
 			}
-			var colors = ["#ccccff", "#94c6ad", "#011f60", "#f49dc0", "#f08212", "#000000", "#2b1c47", "#c4deeb", "#2a5545", "#b8b9c4", "#000000"]
+			var colors = ["#ccccff", "#94c6ad", "#011f60", "#f49dc0", "#fed4d1", "#000000", "#2b1c47", "#c4deeb", "#2a5545", "#b8b9c4", "#000000"]
 			app.style.color = colors[Math.floor((this.current) / 2)]
 			var bb = document.getElementsByClassName("bb-content");
 			for (var i = 0; i < bb.length; i++) {
